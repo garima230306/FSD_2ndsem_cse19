@@ -1,74 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Sum Calculator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .container {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    input {
-      padding: 10px;
-      margin: 5px;
-      width: 80px;
-    }
-
-    button {
-      padding: 10px 20px;
-      background: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #0056b3;
-    }
-
-    h2 {
-      margin-top: 15px;
-    }
-  </style>
+    <title>Sum from 1 to N</title>
+    <link rel="stylesheet" href="mt1.css">
 </head>
 <body>
 
-<t">Result: 0</h2>
-</div>div class="container">
-  <h1>Sum Calculator</h1>
+    <div class="container">
+        <h2>Sum from 1 to N</h2>
 
-  <input type="number" id="num1" placeholder="Num 1">
-  <input type="number" id="num2" placeholder="Num 2">
-  <br>
+        <input type="number" id="num" placeholder="Enter a number">
+        <button onclick="calculateSum()">Calculate</button>
 
-  <button onclick="calculateSum()">Add</button>
+        <h3 id="result"></h3>
+    </div>
 
-  <h2 id="resul
-
-<script>
-  function calculateSum() {
-    let n1 = Number(document.getElementById("num1").value);
-    let n2 = Number(document.getElementById("num2").value);
-
-    let sum = n1 + n2;
-
-    document.getElementById("result").innerText = "Result: " + sum;
-  }
-</script>
-
+    <script src="mt1.js"></script>
 </body>
 </html>
