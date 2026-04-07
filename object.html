@@ -1,0 +1,40 @@
+
+
+
+
+
+<script>
+    let student={
+        name:"garima singh" ,
+        age:"18" ,
+        email:"singh.garima809811@gmIL.com" ,
+        isMarried:false ,
+        address:{
+            area:"lucknow",
+            pincode:201009,
+            city:"GZB"
+        } ,
+        education:null,
+        branch:"cse",
+        section:"cse-18" ,
+        year:2025 ,
+        getInfo:function(){
+            return "my branch is" + "and year is" + student.year;
+        
+        },
+        coursesubjects:{"python", "ai", "maths" ,"webd", "coa"} ,
+        passout:false 
+    }
+    for(let x in  student){
+        console.log(x+ " :" +student[x]);
+    }
+    //using new keyword
+    let studentInfo=new Object();
+    studentInfo.name="upma";
+    studentInfo.age=21;
+    studentInfo.mob=8467084265;
+
+    //access keys using[]notation
+    console.log(studentInfo['name'])
+
+</script>
